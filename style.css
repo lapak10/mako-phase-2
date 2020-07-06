@@ -1,0 +1,244 @@
+/*
+Theme Name: Mako Design
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: Command Media
+Author URI: https://commandmedia.net/
+Description: Theme designed specially for Mako Designs
+Version: 1.0
+Text Domain: makodesign
+*/
+
+html, body {
+    overflow-x: hidden;
+}
+
+.bg-mako-gradient {
+    background-image: linear-gradient(208deg, #7CCBFF 11%, #2DA3F2 100%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50), inset 0 1px 3px 0 rgba(0, 0, 0, 0.50);
+    /* height: 100vh; */
+}
+.border-mako-light-grey{
+  border:1px solid #e0e0e0
+}
+.hero_title {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.hero_subtitle {
+    font-family: 'Roboto', sans-serif;
+}
+
+.blue_card_background {
+    background-image: linear-gradient(208deg, #0C2738 11%, #000000 100%);
+    border-radius: 10px;
+}
+
+.blue_card_background hr {
+    border-top: 1px solid #d8d8d8;
+}
+
+.footer hr {
+    border-top: 2px solid #d8d8d8;
+}
+
+.text-mako-dark {
+    color: #4C4C4C!important;
+}
+
+.black_card_background {
+    background-image: linear-gradient(179deg, #252525 0%, #090909 100%);
+    border-radius: 0 16px 16px 0;
+}
+
+.mako-text-gray {
+    color: #d8d8d8;
+}
+
+.mako-text-gray-2{
+  color:#979797;
+}
+
+.mako-text-gray-3{
+  color:#636363
+}
+
+.mako-text-gray-4{
+  color:#595959
+}
+
+.mako-text-gray-5{
+  color:#ababab
+}
+
+
+.page_heading_2{
+  font-size: 48px;
+color: #4E4E4E;
+letter-spacing: 1.14px;
+line-height: 56px;
+}
+
+.mako-popover-color {
+    color: rgba(58, 58, 58, 0.85);
+}
+
+.mako-bg-gray {
+    background: #f8f8f8 !important;
+}
+
+.mako_posts a:hover {
+    text-decoration: none;
+}
+
+div.accordion button.btn-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+div.mako_posts h4 {
+    font-size: 1.1rem;
+}
+
+div.accordion button.btn-link:not(.collapsed) {
+    color: black;
+}
+
+div.meet_the_mako_team .carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
+    left: 0%;
+    /* padding-left: 8px; */
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: left;
+    background-image: linear-gradient(0deg, #0098FF 0%, rgba(0, 0, 0, 0.00) 100%);
+    /* border-radius: 12px; */
+}
+
+.heading_spacing {
+    letter-spacing: 1.12px;
+}
+
+a, .btn-mako-link {
+    color: #0098FF;
+}
+
+.accordion>.card:first-of-type {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.accordion>.card:not(:first-of-type):not(:last-of-type) {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.accordion>.card:last-of-type {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.bg-linkedin-blue {
+    background-color: #007EBB;
+}
+
+.bg-facebook-blue {
+    background-color: #3b5998;
+}
+
+.bg-pinterest-red {
+    background-color: #CC2127;
+}
+
+.bg-twitter-blue {
+    background-color: #1DA1F2;
+}
+
+div.popover {
+    top: -74px!important;
+    left: 10px!important;
+    letter-spacing: 0.17px;
+    line-height: 22px;
+}
+
+div.popover div.arrow {
+    top: 175px!important;
+}
+
+div.popover-header {
+    letter-spacing: 0.17px!important;
+    line-height: 22px!important;
+}
+
+.mako-letter-spacing-0-17px {
+    letter-spacing: 0.17px!important;
+}
+
+.mako-line-height-22px {
+    line-height: 22px!important;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-24 {
+    font-size: 20px;
+}
+
+.smart_box {
+    border-radius: 16px;
+    box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.07);
+}
+
+.shadow-kevin-quote {
+    box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.07);
+}
+
+.top-menu-padding {
+    padding-left: .75rem!important;
+    padding-right: 0rem!important;
+}
+
+div.row.select_projects_row p.hero_subtitle {
+    font-size: 14px;
+    color: #292929;
+    letter-spacing: 0.25px;
+}
+
+div.meet_the_mako_team p.mako-text-gray {
+    font-size: 14px;
+    color: #ABABAB;
+    letter-spacing: 0.44px;
+    line-height: 20px;
+}
+
+div.footer_social_icons i {
+    font-size: 1.3rem;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #0098FF;
+    border-color: #0098FF;
+}
+.btn-outline-primary {
+    color: #0098FF;
+    
+    border-color: #0098FF;
+}

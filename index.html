@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Mako Design theme">
+	<meta name="author" content="Command Media">
+	<title>MAKO Design + Invent | Industrial Design, Mechanical Design & Electrical Development for Product Startups &
+		Small Businesses</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap"
+		rel="stylesheet">
+
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+	<script src='./index.js'></script>
+
+	<link rel="stylesheet" href="style.css">
+	<style>
+		@media (max-width: 991.98px) {
+			.offcanvas-collapse {
+				position: fixed;
+				z-index: 1;
+				top: 100px;
+				/* Height of navbar */
+				bottom: 0;
+				left: 100%;
+				width: 100%;
+				padding-right: 1rem;
+				padding-left: 1rem;
+				overflow-y: auto;
+				visibility: hidden;
+				background-color: #78c9fd;
+				transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+				transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+				transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+			}
+
+			.offcanvas-collapse.open {
+				visibility: visible;
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
+			}
+		}
+
+		.nav-scroller {
+			position: relative;
+			z-index: 2;
+			height: 2.75rem;
+			overflow-y: hidden;
+		}
+
+		.nav-scroller .nav {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+			padding-bottom: 1rem;
+			margin-top: -1px;
+			overflow-x: auto;
+			color: rgba(255, 255, 255, .75);
+			text-align: center;
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		.nav-underline .nav-link {
+			padding-top: .75rem;
+			padding-bottom: .75rem;
+			font-size: .875rem;
+			color: #6c757d;
+		}
+
+		.nav-underline .nav-link:hover {
+			color: #007bff;
+		}
+
+		.nav-underline .active {
+			font-weight: 500;
+			color: #343a40;
+		}
+
+		.text-white-50 {
+			color: rgba(255, 255, 255, .5);
+		}
+
+		.bg-purple {
+			background-color: #6f42c1;
+		}
+
+		.lh-100 {
+			line-height: 1;
+		}
+
+		.lh-125 {
+			line-height: 1.25;
+		}
+
+		.lh-150 {
+			line-height: 1.5;
+		}
+
+		.image-cropper {
+			width: 160px;
+			height: 160px;
+		}
+
+		@media (max-width: 1199.98px) {
+			.faq_container_margin {
+				margin-top: 320px !important;
+			}
+
+			.blue_card_background,
+			.timothy_heller_card {
+				border-radius: 0px !important;
+			}
+
+			.meet_mako_height {
+				height: 800px;
+			}
+
+			.kevin-quote-top-position {
+				top: -240px;
+			}
+
+			.text-underline-small-device {
+				text-decoration: underline;
+			}
+
+			.font-size-12-small-device {
+				font-size: 12px;
+			}
+
+			.font-size-14-small-device {
+				font-size: 14px;
+			}
+
+			.font-weight-bold-small-device {
+				font-weight: 700 !important;
+			}
+
+
+			.w-50-small-device {
+				width: 50% !important;
+			}
+
+			.footer_heading_responsive_font_size {
+				font-size: 24px;
+			}
+
+			.m-sm-0 {
+				margin: 0 !important;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			.faq_container_margin {
+				margin-top: 350px !important;
+			}
+
+			.kevin-quote-top-position {
+				top: -100px;
+			}
+
+			.footer_heading_responsive_font_size {
+				font-size: 1.75rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="section py-3 overflow-hidden px-lg-5">
+		<div class="container mt-3 px-lg-5">
+			<div class="row">
+				<div class="col-12 d-none d-lg-block text-right">
+					<div class="btn-group" role="group" aria-label="Social links">
+
+						<a href='http://www.facebook.com/MakoInvent' target="_blank"
+							class="btn text-black py-0 top-menu-padding"><i class="fab fa-facebook-square"></i></a>
+						<a href='https://medium.com/@kevmako' class="btn text-black py-0 top-menu-padding"><i
+                                class="fab fa-medium-m"></i></a>
+						<a href='https://www.youtube.com/makoinvent' target="_blank"
+							class="btn text-black py-0 top-menu-padding"><i class="fab fa-youtube"></i></a>
+						<a href='https://vimeo.com/channels/mako' class="btn text-black py-0 top-menu-padding"><i
+                                class="fab fa-vimeo-v"></i></a>
+						<a href='https://www.quora.com/profile/Kevin-Mako'
+							class="btn text-black py-0 top-menu-padding"><i class="fab fa-quora"></i></a>
+
+						<a href='https://www.linkedin.com/company/makodesign' target="_blank"
+							class="btn text-black py-0 top-menu-padding"><i class="fab fa-linkedin-in"></i></a>
+
+
+						<a href='http://www.twitter.com/MakoInvent' target="_blank"
+							class="btn text-black py-0 top-menu-padding"><i class="fab fa-twitter"></i></a>
+
+						<a href='https://www.instagram.com/makoinvent/' target="_blank"
+							class="btn text-black py-0 top-menu-padding"><i class="fab fa-instagram"></i></a>
+						<a href='https://www.makodesign.com/Blog/' target="_blank"
+							class="btn text-black py-0 top-menu-padding"><i class="fas fa-rss"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row d-none d-lg-block">
+				<div class="col-12">
+					<div class="row">
+
+						<div class="col-4">
+							<a class="" href="https://www.makodesign.com">
+              <img src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/logo.png"
+                                    alt="mako logo" style="
+    filter: contrast(0.4);
+"></a>
+						</div>
+
+						<div class="col-8">
+							<div>
+								<nav class="hero_subtitle text-right">
+									<a class=" p-2 text-mako-dark" href="#">Services</a>
+									<a class="p-2 text-mako-dark" href="#">Our Work</a>
+									<a class="p-2 text-mako-dark" href="#">Blog</a>
+									<a class="p-2 text-mako-dark" href="#">Awards</a>
+									<a class="p-2 text-mako-dark" href="#">Testimonials</a>
+									<a class="p-2 text-mako-dark" href="#">Resources</a>
+									<a class="p-2 text-mako-dark" href="#">FAQs</a>
+									<a class="p-2 text-mako-dark" href="#">Contact</a>
+									<a class="btn py-2 pl-2 pr-0 text-mako-dark open_search"><i
+                                            class="fas fa-search"></i></a>
+
+								</nav>
+							</div>
+							<div class="hero_subtitle text-right pl-3 ml-0" style="display:none;">
+								<div class="d-flex align-items-center">
+									<form action="#" class="w-100">
+										<input class="w-100" placeholder="Search..." type="text" style="
+                background: transparent;
+                border: none;
+                outline: none;
+            ">
+                                    </form>
+										<a class="btn py-2 pl-2 pr-0 text-mako-dark close_search"><i
+                                            class="fas fa-times"></i></a>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="d-flex d-lg-none align-items-start justify-content-between">
+				<a data-toggle="offcanvas" class="btn text-white px-0">
+					<!-- <i class="fas fa-bars"></i> -->
+					<img src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/navigation-menu.svg" alt="menu button">
+                </a>
+					<img src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/logo.png" alt="mako logo">
+
+            </div>
+					<div class="navbar-collapse offcanvas-collapse d-lg-none" id="navbarsExampleDefault">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">Our Work</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">Awards</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">Testimonials</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">Resources</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">FAQs</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">Contact</a>
+							</li>
+
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+							<!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+						</form>
+					</div>
+
+			</div>
+      </div>
+
+    <!-- TESTIMONIAL -->
+		<div class="py-0 my-5">
+
+			<div class="container my-0 px-lg-5">
+				<div class="row px-lg-0">
+
+					<div class="col-12 px-lg-0">
+						<h4 class="page_heading_2 hero_title text-uppercase mb-5">TESTIMONIALS</h4>
+
+            <div class="row">
+              <div class="col-9 bg-light px-lg-5 py-lg-4 rounded">
+                <p class='px-lg-4 py-lg-3 mako-text-gray-4'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices rutrum dolor, in aliquet nisi blandit vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc at lorem vel lorem rutrum porta ut at orci.”
+                </p>
+                <a href="" class='pl-lg-4'>View Project</a>
+                
+              </div>
+              <div class="col-3 mako-text-gray-4">
+                <img src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/bose_testi_user.png" alt="Timothy Heller">
+                <p>Timothy Heller</p>
+                <p>Presiden of Industrial Design</p>
+                <img class='w-50' src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/bose_logo.png" alt="Bose Logo">
+              </div>
+            </div>
+
+						
+
+					</div>
+					
+
+					</div>
+
+
+				</div>
+
+			</div>
+      
+    <!-- SINGLE BLOG POST -->
+		<div class="py-0 mb-5 mt-5">
+
+			<div class="container my-0 px-lg-5">
+				<div class="row px-lg-0">
+					<div class="col-12 d-lg-none text-center hero_title">
+						<h4 class="heading_spacing text-uppercase">Mako’s Recommended Ways to Build a Strong Brand Name for Small Businesses</h4>
+					</div>
+
+
+
+
+					<div class="col-8 d-none d-lg-block px-lg-0">
+						<h4 class="page_heading_2 hero_title text-uppercase">Mako’s Recommended Ways to Build a Strong Brand Name for Small Businesses</h4>
+
+            <div class="d-flex flex-column">
+              <p>MAKO Design + Invent – Oct 17, 2019</p>
+              <a href="#" class="btn-mako-link">Business, Industrial Design, Inventors, Product Design, Start-ups</a>
+            </div>
+
+						<div class="row my-4">
+							<div class="col-12">
+                <p class='my-3 mako-text-gray-3 hero_subtitle'>It’s not a surprise that when entrepreneurs and home inventors begin to envision their future small business, they immediately start out with projecting ideas for the name and image of their business. Reasonably so, having a name for your business or product is a smart way to not only build a formation around the style and design of your product (for example, if you have a proposed idea on an ideal colour for your brands logo, then designing your product with the same colour is a great branding strategy for consumer to remember your product). Below are some important points to consider when thinking of a strong brand name for your business.</p>
+
+                <h3 class='hero_title mako-text-gray-3 text-uppercase mt-5'>Defining the Importance of a Strong Brand Name</h3>
+                <p class="my-3 mako-text-gray-3 hero_subtitle">It’s not a surprise that when entrepreneurs and home inventors begin to envision their future small business, they immediately start out with projecting ideas for the name and image of their business. Reasonably so, having a name for your business or product is a smart way to not only build a formation around the style and design of your product (for example, if you have a proposed idea on an ideal colour for your brands logo, then designing your product with the same colour is a great branding strategy for consumer to remember your product). Below are some important points to consider when thinking of a strong brand name for your business.</p>
+
+                <img class='w-100' src="https://via.placeholder.com/736x460" alt="sample image">
+
+                <h3 class='hero_title mako-text-gray-3 text-uppercase mt-5'>How a Strong Brand Name Can Positively Affect Your Business</h3>
+                <p class="my-3 mako-text-gray-3 hero_subtitle">It’s not a surprise that when entrepreneurs and home inventors begin to envision their future small business, they immediately start out with projecting ideas for the name and image of their business. Reasonably so, having a name for your business or product is a smart way to not only build a formation around the style and design of your product (for example, if you have a proposed idea on an ideal colour for your brands logo, then designing your product with the same colour is a great branding strategy for consumer to remember your product). Below are some important points to consider when thinking of a strong brand name for your business.</p>
+
+								</div>
+						</div>
+
+					</div>
+					<div class="col-4 d-none d-lg-block">
+						<div class="card card-body bg-light border-0 pt-0">
+							<h4 class="hero_title text-uppercase mako-text-gray-4 mt-5">Recent Posts</h4>
+
+              <div class='d-flex flex-column mb-3'>
+                <div class="d-flex my-2">
+                  <i class="far fa-file-alt mr-2 mako-text-gray-5 d-block pt-1"></i> <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Why Great Packaging is
+												Key ft. Mako Client!</a>
+                </div>
+                <div class="d-flex my-2">
+                  <i class="far fa-file-alt mr-2 mako-text-gray-5 d-block pt-1"></i> <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Best Product Business Tips from Seth Godins’, ‘Purple Cow’</a>
+                </div>
+                <div class="d-flex my-2">
+                  <i class="far fa-file-alt mr-2 mako-text-gray-5 d-block pt-1"></i> <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Mako Design Client Spotlight: Bob Ginther – The Tri-Plunger!</a>
+                </div>
+                <div class="d-flex my-2">
+                  <i class="far fa-file-alt mr-2 mako-text-gray-5 d-block pt-1"></i> <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">How to Create a Strong Clientele and Customer Relationship as a Small Business</a>
+                </div>
+              </div>
+
+              <h4 class="hero_title text-uppercase mako-text-gray-4 mt-5">Blog Categories</h4>
+              <div class='d-flex flex-column mb-3'>
+                
+                <div class="d-flex justify-content-between my-1">
+                  <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Business</a>
+                  <span class="mako-text-gray-4">29</span>
+                </div>
+
+                <div class="d-flex justify-content-between my-1">
+                  <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Client Spotlight</a>
+                  <span class="mako-text-gray-4">64</span>
+                </div>
+
+                <div class="d-flex justify-content-between my-1">
+                  <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Company News</a>
+                  <span class="mako-text-gray-4">110</span>
+                </div>
+
+                <div class="d-flex justify-content-between my-1">
+                  <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Design</a>
+                  <span class="mako-text-gray-4">28</span>
+                </div>
+               
+               <h4 class="hero_title text-uppercase mako-text-gray-4 mt-5">POPULAR BLOG SUBJECTS</h4>
+              <div class='mb-3'>
+                
+               <button type="button" class="btn btn-outline-primary m-1">Business</button>
+               <button type="button" class="btn btn-outline-primary m-1">Client Spotlight</button>
+               <button type="button" class="btn btn-outline-primary m-1">Community Initiatives</button>
+               <button type="button" class="btn btn-outline-primary m-1">Company News</button>
+               <button type="button" class="btn btn-outline-primary m-1">Crowdfunding</button>
+               <button type="button" class="btn btn-outline-primary m-1">Design Awards</button>
+              <button type="button" class="btn btn-outline-primary m-1">Design</button>
+              </div>
+							
+
+
+
+								
+							</div>
+						</div>
+					</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		<!-- BLOG-->
+		<div class="py-0 mb-5 mt-5">
+
+			<div class="container my-0 px-lg-5">
+				<div class="row px-lg-0">
+					<div class="col-12 d-lg-none text-center hero_title">
+						<h4 class="heading_spacing">BLOG</h4>
+					</div>
+
+
+
+
+					<div class="col-8 d-none d-lg-block px-lg-0">
+						<h4 class="page_heading_2 hero_title">BLOG</h4>
+
+						<div class="row my-4">
+							<div class="col-12">
+								<img class='w-100' src="https://via.placeholder.com/736x264" alt="sample image">
+								<h4 class="hero_title mt-3">Most Important Step to Product Design – Research!</h4>
+
+								<div class="row">
+									<div class="col-lg-9">
+										The most crucial parts of creating your invention is the product design process.
+										Although inventors may have an Idea of what they want to create, however a lot
+										of inventors fall that their ideas fall short or never come to the light of
+										fruition because they aren’t as... <a href="#">Read More</a>
+									</div>
+									<div class="col-lg-3">
+										<a href='#'>Mako Design + Invent</a>
+										<h6>DEC 9th, 2019</h6>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+            <div class="row my-4">
+							<div class="col-12">
+								<img class='w-100' src="https://via.placeholder.com/736x264" alt="sample image">
+								<h4 class="hero_title mt-3">Most Important Step to Product Design – Research!</h4>
+
+								<div class="row">
+									<div class="col-lg-9">
+										The most crucial parts of creating your invention is the product design process.
+										Although inventors may have an Idea of what they want to create, however a lot
+										of inventors fall that their ideas fall short or never come to the light of
+										fruition because they aren’t as... <a href="#">Read More</a>
+									</div>
+									<div class="col-lg-3">
+										<a href='#'>Mako Design + Invent</a>
+										<h6>DEC 9th, 2019</h6>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+
+					</div>
+					<div class="col-4 d-none d-lg-block">
+						<div class="card card-body bg-light border-0 pt-0">
+							<h4 class="hero_title text-uppercase mako-text-gray-4 mt-5">Recent Posts</h4>
+
+              <div class='d-flex flex-column mb-3'>
+                <div class="d-flex my-2">
+                  <i class="far fa-file-alt mr-2 mako-text-gray-5 d-block pt-1"></i> <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Why Great Packaging is
+												Key ft. Mako Client!</a>
+                </div>
+                <div class="d-flex my-2">
+                  <i class="far fa-file-alt mr-2 mako-text-gray-5 d-block pt-1"></i> <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Best Product Business Tips from Seth Godins’, ‘Purple Cow’</a>
+                </div>
+                <div class="d-flex my-2">
+                  <i class="far fa-file-alt mr-2 mako-text-gray-5 d-block pt-1"></i> <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Mako Design Client Spotlight: Bob Ginther – The Tri-Plunger!</a>
+                </div>
+                <div class="d-flex my-2">
+                  <i class="far fa-file-alt mr-2 mako-text-gray-5 d-block pt-1"></i> <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">How to Create a Strong Clientele and Customer Relationship as a Small Business</a>
+                </div>
+              </div>
+
+              <h4 class="hero_title text-uppercase mako-text-gray-4 mt-5">Blog Categories</h4>
+              <div class='d-flex flex-column mb-3'>
+                
+                <div class="d-flex justify-content-between my-1">
+                  <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Business</a>
+                  <span class="mako-text-gray-4">29</span>
+                </div>
+
+                <div class="d-flex justify-content-between my-1">
+                  <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Client Spotlight</a>
+                  <span class="mako-text-gray-4">64</span>
+                </div>
+
+                <div class="d-flex justify-content-between my-1">
+                  <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Company News</a>
+                  <span class="mako-text-gray-4">110</span>
+                </div>
+
+                <div class="d-flex justify-content-between my-1">
+                  <a href='http://www.facebook.com/MakoInvent' target="_blank"
+												class="btn btn-mako-link text-left p-0">Design</a>
+                  <span class="mako-text-gray-4">28</span>
+                </div>
+               
+               <h4 class="hero_title text-uppercase mako-text-gray-4 mt-5">POPULAR BLOG SUBJECTS</h4>
+              <div class='mb-3'>
+                
+               <button type="button" class="btn btn-outline-primary m-1">Business</button>
+               <button type="button" class="btn btn-outline-primary m-1">Client Spotlight</button>
+               <button type="button" class="btn btn-outline-primary m-1">Community Initiatives</button>
+               <button type="button" class="btn btn-outline-primary m-1">Company News</button>
+               <button type="button" class="btn btn-outline-primary m-1">Crowdfunding</button>
+               <button type="button" class="btn btn-outline-primary m-1">Design Awards</button>
+              <button type="button" class="btn btn-outline-primary m-1">Design</button>
+              </div>
+							
+
+
+
+								
+							</div>
+						</div>
+					</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+			<!-- PROJECTS SIMPLE AND COMPLEX -->
+			<div class="py-0 mb-5">
+
+				<div class="container my-0 px-lg-5">
+					<div class="row px-lg-4">
+						<div class="col-12 d-lg-none text-center mb-4 mt-3 hero_title">
+							<h4 class="heading_spacing">GOFISH UNDERWATER CAMERA</h4>
+						</div>
+
+
+
+
+						<div class="col-7 d-none d-lg-block mb-4 mt-3 px-lg-0">
+							<h4 class="page_heading_2 hero_title">GOFISH UNDERWATER CAMERA</h4>
+							<p class="heading_subtitle font-size-16 mako-text-gray-3">A complex consumer electronic
+								project idea that lead to booming success for the clients! Industrial Design, Mechanical
+								Engineering, and fully-functional Prototyping were done by my the MAKO Design + Invent
+								team to jumpstart the client’s product business. Congrats to Ryan Austin and Brandon
+								Austin for their success with GoFish now sold worldwide with hundreds of customer video
+								uploads catching all kinds of crazy fish!<p>
+
+									<div class="d-flex flex-column align-items-start">
+										<a href='http://www.facebook.com/MakoInvent' target="_blank"
+											class="btn btn-mako-link pb-2 pl-0"><i class="fab fa-amazon mr-3"></i>Purchase
+											on Amazon</a>
+										<a href='http://www.facebook.com/MakoInvent' target="_blank"
+											class="btn btn-mako-link pb-2 pl-0"><i class="fas fa-globe mr-3"></i>GoFish
+											Website</a>
+										<a href='http://www.facebook.com/MakoInvent' target="_blank"
+											class="btn btn-mako-link pb-2 pl-0"><i class="fab fa-facebook-square mr-3"></i>GoFish
+											Facebook</a>
+										<a href='http://www.facebook.com/MakoInvent' target="_blank"
+											class="btn btn-mako-link pb-2 pl-0"><i class="fab fa-instagram mr-3"></i>GoFish
+											Instagram</a>
+									</div>
+
+						</div>
+						<div class="col-4 offset-1 d-none d-lg-block mb-4 mt-3 text-right">
+							<div class="card card-body bg-light border-0">
+								<h1 class="hero_title">
+									Services Implemented
+								</h1>
+								<div class="d-flex flex-column align-items-end">
+									<a href='http://www.facebook.com/MakoInvent' target="_blank"
+										class="btn btn-mako-link pb-2 pl-0">Industrial Design</a>
+									<a href='http://www.facebook.com/MakoInvent' target="_blank"
+										class="btn btn-mako-link pb-2 pl-0">Electrical Design</a>
+									<a href='http://www.facebook.com/MakoInvent' target="_blank"
+										class="btn btn-mako-link pb-2 pl-0">Mechanical Design</a>
+									<a href='http://www.facebook.com/MakoInvent' target="_blank"
+										class="btn btn-mako-link pb-2 pl-0">Production</a>
+									<a href='http://www.facebook.com/MakoInvent' target="_blank"
+										class="btn btn-mako-link pb-2 pl-0">Video Rendering</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 px-0">
+							<img class='w-100' src="https://via.placeholder.com/1120x630" alt="sample image">
+            </div>
+
+							<div class="col-12 px-0 mt-5">
+								<div style="padding:56.25% 0 0 0;position:relative;"><iframe
+										src="https://player.vimeo.com/video/350164480"
+										style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+										allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+								<script src="https://player.vimeo.com/api/player.js"></script>
+							</div>
+
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+				<!-- PROJECTS LIST -->
+				<div class="py-0 mb-5">
+
+					<div class="container my-0 px-lg-5">
+						<div class="row px-lg-4">
+							<div class="col-12 d-lg-none text-center mb-4 mt-3 hero_title">
+								<h4 class="heading_spacing">SELECT PROJECTS</h4>
+							</div>
+
+
+
+
+							<div class="col-8 d-none d-lg-block mb-4 mt-3 px-lg-0">
+								<h4 class="page_heading_2 hero_title">SELECT PROJECTS</h4>
+								<p class="heading_subtitle font-size-16 mako-text-gray-3">We work on a LOT of projects,
+									over 150 a year! Some are quick, others are quite complex. Take a look at a few
+									project highlights below. By default all projects are shown; however, click the tabs
+									to narrow your search.<p>
+							</div>
+							<div class="col-4 d-none d-lg-block mb-4 mt-3 text-right">
+								<img src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/popover-button.png"></img>
+							</div>
+						</div>
+						<div class="row px-lg-4 mb-4">
+
+							<div class="col-12 px-lg-0">
+								<button type="button" class="btn mako-text-gray-2 mako-bg-gray border-mako-light-grey">All</button>
+								<button type="button" class="btn mako-text-gray-2 mako-bg-gray border-mako-light-grey">Industrial Design</button>
+								<button type="button" class="btn mako-text-gray-2 mako-bg-gray border-mako-light-grey">Electric Design</button>
+								<button type="button" class="btn mako-text-gray-2 mako-bg-gray border-mako-light-grey">Mechanical Design</button>
+
+								<button type="button" class="btn mako-text-gray-2 mako-bg-gray border-mako-light-grey">Production</button>
+
+								<button type="button" class="btn mako-text-gray-2 mako-bg-gray border-mako-light-grey">Video Rendering</button>
+
+							</div>
+
+						</div>
+						<div class="row select_projects_row px-lg-2">
+							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
+								<a href=' #'><img class="w-100"
+                            src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/comfy_cup.png" alt="bose logo"></a>
+									<h5 class="hero_title mt-3"><a class='text-body' href="#">Comfy Cup</a></h5>
+									<p class="hero_subtitle">The World’s First Portable Public Transportation Cup Holder
+										for Trains
+										Buses.</p>
+							</div>
+							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
+								<a href='#'><img class="w-100"
+                            src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/car_generator.png"
+                            alt="bose logo"></a>
+									<h5 class="hero_title mt-3"><a class='text-body' href="#">Car Generator</a></h5>
+									<p class="hero_subtitle">Check out Jon Schloo on Dragon’s Den. Another great idea
+										that MAKO
+										Design +
+										Invent designed!</p>
+							</div>
+							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
+								<a href='#'><img class="w-100"
+                            src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/kharaband_small.png"
+                            alt="bose logo"></a>
+									<h5 class="hero_title mt-3"><a class='text-body' href="#">Kharaband
+											Battery-Extending Watch
+											Band</a>
+									</h5>
+									<p class="hero_subtitle">A flexible watch band that connects to existing
+										smartwatches, tripling
+										the
+										battery life.</p>
+							</div>
+
+							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
+								<a href='#'><img class="w-100" src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/gofish.png"
+                            alt="bose logo"></a>
+									<h5 class="hero_title mt-3"><a class='text-body' href="#">GoFish Underwater
+											Camera</a></h5>
+									<p class="hero_subtitle">A complex, underwater camera system that lead to booming
+										success for
+										the
+										founders.</p>
+							</div>
+							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
+								<a href='#'><img class="w-100"
+                            src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/aiasp_magic.png"
+                            alt="bose logo"></a>
+									<h5 class="hero_title mt-3"><a class='text-body' href="#">Clasp Magic Jewelry
+											Device</a></h5>
+									<p class="hero_subtitle">A game-changing device that makes it super simple to put
+										jewelry clasps
+										on!
+									</p>
+							</div>
+							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
+								<a href='#'><img class="w-100"
+                            src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/some_lock.png" alt="bose logo"></a>
+									<h5 class="hero_title mt-3"><a class='text-body' href="#">Performa Series Gym
+											Lock</a></h5>
+									<p class="hero_subtitle">This is the first to market in a series of products that
+										MAKO Design +
+										Invent has done for Performa Brands.</p>
+							</div>
+
+							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
+								<a href='#'><img class="w-100"
+                            src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/voca_eyewear.png"
+                            alt="bose logo"></a>
+									<h5 class="hero_title mt-3"><a class='text-body' href="#">VOCA Eyewear</a></h5>
+									<p class="hero_subtitle">VOCA’s AutoLoc™ lens retention system allows secure lens
+										changes,
+										easier
+										than you ever thought possible.</p>
+							</div>
+							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
+								<a href='#'><img class="w-100" src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/festken.png"
+                            alt="bose logo"></a>
+									<h5 class="hero_title mt-3"><a class='text-body' href="#">Festken</a></h5>
+									<p class="hero_subtitle">Festken, a new water bottle for the festival goer. Now
+										being sold out
+										at
+										festivals all over the world</p>
+							</div>
+							<div class="col-12 col-lg-4 mb-2 mb-lg-4">
+								<a href='#'><img class="w-100"
+                            src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/blueme_cigar.png"
+                            alt="bose logo"></a>
+									<h5 class="hero_title mt-3"><a class='text-body' href="#">Blume Cigar Humidifier</a>
+									</h5>
+									<p class="hero_subtitle">A completely custom-designed, app-based, connected device
+										that keeps
+										your
+										cigars at optimum humidity.</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<!-- FOOTER BELOW THIS POINT -->
+				<div class="container my-5 footer px-lg-5">
+					<div class="row pt-4 px-lg-2">
+						<div class="col-12 col-lg-6">
+							<h1 class="hero_title footer_heading_responsive_font_size">
+								Ready for MAKO to make your product the next success story?
+							</h1>
+						</div>
+						<div class="col-12 d-lg-none col-lg-6 text-left">
+							<h5 class="mt-5 mb-3 my-lg-0 font-size-14-small-device font-weight-bold-small-device">
+								General Contact
+							</h5>
+							<a href="tel:+18886086256" class="my-0 pt-2">
+								<p class="font-weight-bold m-sm-0">+ 1 (888) 608 - MAKO (6256)</p>
+							</a>
+							<a href="mailto:info@makodesign.com" class="my-0 pt-2">
+								<p class="font-weight-bold">info@makodesign.com</p>
+							</a>
+							<div class="d-lg-none footer_social_icons btn-group btn-block" role="group"
+								aria-label="Social links">
+
+								<a href='http://www.facebook.com/MakoInvent' target="_blank"
+									class="btn btn-mako-link py-0 pr-1 pl-0"><i class="fab fa-facebook-square"></i></a>
+								<a href='https://medium.com/@kevmako' class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-medium-m"></i></a>
+								<a href='https://www.youtube.com/makoinvent' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-youtube"></i></a>
+								<a href='https://vimeo.com/channels/mako' class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-vimeo-v"></i></a>
+								<a href='https://www.quora.com/profile/Kevin-Mako'
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-quora"></i></a>
+
+								<a href='https://www.linkedin.com/company/makodesign' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i class="fab fa-linkedin-in"></i></a>
+
+
+								<a href='http://www.twitter.com/MakoInvent' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-twitter"></i></a>
+
+								<a href='https://www.instagram.com/makoinvent/' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i class="fab fa-instagram"></i></a>
+								<a href='https://www.makodesign.com/Blog/' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fa fa-rss"></i></a>
+
+							</div>
+							<div class="d-none d-lg-block btn-group btn-block" role="group" aria-label="Social links">
+
+								<a href='http://www.facebook.com/MakoInvent' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-facebook-square"></i></a>
+								<a href='https://medium.com/@kevmako' class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-medium-m"></i></a>
+								<a href='https://www.youtube.com/makoinvent' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-youtube"></i></a>
+								<a href='https://vimeo.com/channels/mako' class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-vimeo-v"></i></a>
+								<a href='https://www.quora.com/profile/Kevin-Mako'
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-quora"></i></a>
+
+								<a href='https://www.linkedin.com/company/makodesign' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i class="fab fa-linkedin-in"></i></a>
+
+
+								<a href='http://www.twitter.com/MakoInvent' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-twitter"></i></a>
+
+								<a href='https://www.instagram.com/makoinvent/' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i class="fab fa-instagram"></i></a>
+								<a href='https://www.makodesign.com/Blog/' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fa fa-rss"></i></a>
+
+							</div>
+
+						</div>
+						<div class="col-6 d-none d-lg-block text-right">
+							<h5 class="my-0">General Contact</h5>
+							<p class="my-0 pt-3 pb-1">+ 1 (888) 608 - MAKO (6256)</p>
+							<a href="mailto:info@makodesign.com" class="my-0 pt-2">
+								<p class="font-weight-bold">info@makodesign.com</p>
+							</a>
+							<div class="btn-group" role="group" aria-label="Social links">
+
+								<a href='http://www.facebook.com/MakoInvent' target="_blank"
+									class="btn btn-mako-link py-0 pr-1 pl-0"><i class="fab fa-facebook-square"></i></a>
+								<a href='https://medium.com/@kevmako' class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-medium-m"></i></a>
+								<a href='https://www.youtube.com/makoinvent' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-youtube"></i></a>
+								<a href='https://vimeo.com/channels/mako' class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-vimeo-v"></i></a>
+								<a href='https://www.quora.com/profile/Kevin-Mako'
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-quora"></i></a>
+
+								<a href='https://www.linkedin.com/company/makodesign' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i class="fab fa-linkedin-in"></i></a>
+
+
+								<a href='http://www.twitter.com/MakoInvent' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fab fa-twitter"></i></a>
+
+								<a href='https://www.instagram.com/makoinvent/' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i class="fab fa-instagram"></i></a>
+								<a href='https://www.makodesign.com/Blog/' target="_blank"
+									class="btn btn-mako-link py-0 pr-1"><i
+                            class="fa fa-rss"></i></a>
+
+							</div>
+						</div>
+					</div>
+					<div class="row mt-5 hero_subtitle px-lg-2">
+						<div class="col-12 col-lg-3">
+							<hr>
+							<div class="d-flex flex-column px-2">
+								<img class="w-100 d-none d-lg-block"
+                        src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/ofc_austin.png" alt="austin office">
+								<h5 class="mt-4 mb-3 font-size-16">Austin</h5>
+								<div class="row">
+									<div class="col-6 col-lg-12">
+										<a href="tel:+14168551137">
+											<p class="font-size-14">+ (512) 888 - 2822</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-12">
+										<p class="font-size-14">3205 Liberty Street <br> Austin, TX 78705, USA <br> (Downtown,
+                                Central)
+                            </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-3">
+							<hr>
+							<div class="d-flex flex-column px-2">
+								<img class="w-100 d-none d-lg-block"
+                        src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/ofc_toronto.png" alt="Toronto office">
+								<h5 class="mt-4 mb-3 font-size-16">Toronto</h5>
+								<div class="row">
+									<div class="col-6 col-lg-12">
+										<a href="tel:+14168551137">
+											<p class="font-size-14">+1 (416) 855 - 1137</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-12">
+										<p class="font-size-14">46 Fort York Boulevard<br> Toronto, ON M5V 3Z3, CAN <br>
+                                (Downtown,
+                                Central)
+                            </p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-12 col-lg-3">
+							<hr>
+							<div class="d-flex flex-column px-2">
+								<img class="w-100 d-none d-lg-block"
+                        src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/ofc_miami.png" alt="Miami office">
+								<h5 class="mt-4 mb-3 font-size-16">Miami</h5>
+								<div class="row">
+									<div class="col-6 col-lg-12">
+										<a href="tel:+14168551137">
+											<p class="font-size-14">+1 (305) 800 - 6256</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-12">
+										<p class="font-size-14">1657 North Miami Avenue – Suite 914<br> Miami, FL 33136, USA
+											<br>
+                                (Downtown,
+                                Wynwood)</p>
+									</div>
+								</div>
+
+
+							</div>
+
+						</div>
+						<div class="col-12 col-lg-3">
+							<hr>
+							<div class="d-flex flex-column px-2">
+								<img class="w-100 d-none d-lg-block"
+                        src="http://makodesign.commandmedia.net/wp-content/themes/cmd-mako-design/images/ofc_sf.png" alt="San Francisco office">
+								<h5 class="mt-4 mb-3 font-size-16">San Francisco</h5>
+
+								<div class="row">
+									<div class="col-6 col-lg-12">
+										<a href="tel:+14168551137">
+											<p class="font-size-14">+ (512) 888 - 2822</p>
+										</a>
+									</div>
+									<div class="col-6 col-lg-12">
+										<p class="font-size-14">8000 Edgewater Dr.<br> Oakland, CA 94621, USA <br> (Moving Soon
+                                Into
+                                CircuitLaunch)</p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="row mt-5 hero_subtitle px-lg-2">
+						<div class="col-12 d-none d-lg-block">
+							<p>
+								©1999 to 2020 Mako Design. All rights reserved.
+							</p>
+						</div>
+						<div class="col-12 d-lg-none text-center px-0 font-size-14">
+							<p class="m-0">
+								©1999 to 2020 Mako Design. All rights reserved.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"
+					integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+					crossorigin="anonymous"></script>
+				<script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/bootstrap.bundle.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
+				<script type='text/javascript'>
+					jQuery(function () {
+
+            let popover_raw_element = $('[data-toggle="popover"]').popover()
+                .data('bs.popover')
+                .getTipElement()
+
+            jQuery(popover_raw_element).addClass('shadow-lg border-0 p-3 mako-popover-color d-none d-lg-block')
+
+                .find('h3').first().addClass('font-weight-light bg-white hero_subtitle mb-2 pb-3 mako-line-height-22px');
+
+            jQuery(popover_raw_element).find('div.popover-body').first().addClass('mako-popover-color')
+
+            // init. manual click trigger as its default show was giving some issue
+            // took double click to remove it for first time
+            jQuery('#contact-us-popup').trigger('click')
+
+            // offcanvas menu
+            jQuery('[data-toggle="offcanvas"]').on('click', function () {
+                jQuery('.offcanvas-collapse').toggleClass('open')
+            })
+
+            // search nav bar effect 
+            jQuery(".open_search").click(function () {
+                jQuery(".close_search").parent().parent().slideToggle('slow', function () {
+                    jQuery(this).find('input:first').focus();
+                });
+                jQuery(".open_search").parent().slideToggle('slow');
+            });
+            jQuery(".close_search").click(function () {
+                jQuery(".close_search").parent().parent().slideToggle('slow');
+                jQuery(".close_search").parent().find('input').first().focus();
+                jQuery(".open_search").parent().slideToggle('slow');
+            });
+
+        })
+				</script>
+				<script>
+					let mako_locations = [
+            { lat: 30.2426567, lng: -97.7770071 },//austin.
+            { lat: 43.6402112, lng: -79.3976321 },//toronto
+            { lat: 34.4015339, lng: -88.8078277 },//miami
+            { lat: 39.3043091, lng: -118.8296388 }// san f.
+        ];
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = { lat: 30.2426567, lng: -97.7770071 };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                zoom: 3, center: mako_locations[0]
+                // ,styles: 
+            });
+            // The marker, positioned at Uluru
+            let markers = []
+            let pinImage = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/0099FF/");
+            markers = mako_locations.map(item => {
+                return new google.maps.Marker({ position: item, icon: pinImage, map: map });
+            })
+
+            // let bounds = new google.maps.LatLngBounds();
+
+            //   markers.map(item=>{
+            //       bounds.extend(item)
+            //   })
+
+            // map.setCenter(bounds.getCenter());
+            // map.fitBounds(bounds);
+
+        }
+				</script>
+				<!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+				<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH36guAwILnYeT_XVAuD77Ybts6DyC4so&callback=initMap">
+				</script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+				<script>
+					jQuery('.meet_slider').slick({
+            centerMode: true,
+            centerPadding: '40px',
+
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+        jQuery('.faq_slider').slick({
+            // centerMode: true,
+            // centerPadding: '40px',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+
+				</script>
+
+</body>
+
+</html>
